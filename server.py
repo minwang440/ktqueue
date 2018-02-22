@@ -39,6 +39,9 @@ __dist_path = os.path.join(__frontend_path, 'dist')
 
 
 def create_db_index():
+
+
+
     client = pymongo.MongoClient(ktqueue.settings.mongodb_server)
     client.ktqueue.jobs.create_index([("name", pymongo.ASCENDING)], unique=True)
     client.ktqueue.jobs.create_index([("hide", pymongo.ASCENDING)])
