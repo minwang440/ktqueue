@@ -35,7 +35,7 @@ from ktqueue.event_watcher import watch_pod
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 __frontend_path = os.path.join(BASE_DIR, 'frontend')
-__dist_path = os.path.join(__frontend_path, 'dist')
+__dist_path = os.path.join(__frontend_path, 'dist1')
 
 
 def create_db_index():
